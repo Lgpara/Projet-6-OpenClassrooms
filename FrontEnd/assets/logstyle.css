@@ -1,0 +1,49 @@
+
+.login_menu {
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.login_menu .title {
+    text-align: center;
+    margin-bottom: 37px;
+}
+.login_menu form {
+    display: flex;
+    flex-direction: column;
+}
+#email {
+    margin-bottom: 30px;
+}
+#password {
+    margin-bottom: 37px;
+}
+.login_menu label {
+    margin-bottom: 7px;
+}
+.login_menu input {
+    height: 50px;
+    width: 380px;
+    border: none;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+.login_menu .btn {
+    margin-top: 17px;
+    color: #E5E5E5;
+    background-color: #1D6154;
+    margin: 0 auto 28px auto;
+}
+.login_menu .forgotten_password {
+    margin: auto;
+    border-bottom: solid #3D3D3D 1px;
+    color: #3D3D3D;
+}
+
+footer {
+    height: 50vh;
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+}
