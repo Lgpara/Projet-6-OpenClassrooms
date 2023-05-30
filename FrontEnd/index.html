@@ -16,13 +16,42 @@
 
 <div class="module no_display">
 	<div class="window">
+		
 		<i class="fa-solid fa-xmark closeModule"></i>
-		<p class="title">Galerie photo</p>
-		<div class="photo_container">
+
+		
+		
+		<i class="fa-solid fa-arrow-left back_arrow no_display"></i>
+		<div class="addphoto_block no_display">
+			<p class="title">Ajout photo</p>
+			<div class="photo_drop">
+				<i class="fa-regular fa-image img_icon"></i>
+				<p class="addbtn">+ Ajouter une photo</p>
+				<p class="file_type_info">jpg.png: 4mo max</p>			
+			</div>
+			<form class="photo_form" action="">
+				<label class="form_title" for="">Titre</label>
+				<input class="form_block fm1" type="text">
+				<label class="form_title" for="">Catégorie</label>
+				<select class="form_block fm2" name="" id="">
+					<option value=""></option>
+				</select>
+			</form>
+			<div class="sepationbar"></div>
+			<div class="btn add_photo_validation_btn">Valider</div>
 		</div>
-		<div class="sepationbar"></div>
-		<div class="btn addPhoto">Ajouter une photo</div>
-		<p class="deleteGallery">Supprimer la galerie</p>
+
+
+
+
+		<div class="delphoto_block">
+			<p class="title">Galerie photo</p>
+			<div class="photo_container">
+			</div>
+			<div class="sepationbar"></div>
+			<div class="btn addPhoto">Ajouter une photo</div>
+			<p class="deleteGallery">Supprimer la galerie</p>
+		</div>
 	</div>
 </div>
 
