@@ -12,8 +12,6 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-
-
 <div class="module no_display">
 	<div class="window">
 		
@@ -24,21 +22,23 @@
 		<i class="fa-solid fa-arrow-left back_arrow no_display"></i>
 		<div class="addphoto_block no_display">
 			<p class="title">Ajout photo</p>
-			<div class="photo_drop">
-				<i class="fa-regular fa-image img_icon"></i>
-				<p class="addbtn">+ Ajouter une photo</p>
-				<p class="file_type_info">jpg.png: 4mo max</p>			
-			</div>
-			<form class="photo_form" action="">
-				<label class="form_title" for="">Titre</label>
-				<input class="form_block fm1" type="text">
-				<label class="form_title" for="">Catégorie</label>
-				<select class="form_block fm2" name="" id="">
+			<form id="submit_photo" class="photo_form">
+				<div class="photo_drop">
+					<input id="photo_input" class="entry1" type="file" required>
+					<div class="uploaded_photo_container"></div>
+					<i class="fa-regular fa-image img_icon no_photo"></i>
+					<p class="addbtn no_photo">+ Ajouter une photo</p>
+					<p class="file_type_info no_photo">jpg.png: 4mo max</p>			
+				</div>
+				<label for="file_title" class="form_title" for="">Titre</label>
+				<input id="file_title" class="form_block entry2" type="text" required>
+				<label for="file_category" class="form_title" for="">Catégorie</label>
+				<select id="file_category" class="form_block entry3" name="" id="">
 					<option value=""></option>
 				</select>
+				<div class="sepationbar"></div>
+				<button type="submit" class="btn add_photo_validation_btn">Valider</button>
 			</form>
-			<div class="sepationbar"></div>
-			<div class="btn add_photo_validation_btn">Valider</div>
 		</div>
 
 
@@ -74,7 +74,8 @@
 		<ul>
 			<li>projets</li>
 			<li>contact</li>
-			<li><a href="logpage.html">login</a></li>
+			<li class="logout_nav no_display">logout</li>
+			<li class="login_nav"><a href="logpage.html">login</a></li>
 			<li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
 		</ul>
 	</nav>
@@ -83,6 +84,10 @@
 	<section id="introduction">
 		<figure>
 			<img src="./assets/images/sophie-bluel.png" alt="">
+			<div class="edit_btn edit_btn_photo">
+				<i class="fa-regular fa-pen-to-square"></i>
+				<p>modifier</p>
+			</div>
 		</figure>
 		<article>
 			<h2>Designer d'espace</h2>
@@ -92,7 +97,13 @@
 		</article>
 	</section>
 	<section id="portfolio">
-		<h2>Mes Projets</h2>
+		<div class="projet_title_container">
+			<h2>Mes Projets</h2>
+			<div class="edit_btn edit_btn_projet">
+				<i class="fa-regular fa-pen-to-square"></i>
+				<p>modifier</p>
+			</div>
+		</div>
 		<div class="filter_container">
 			<button class="btn btn_all selected">Tous</button>
 			<button class="btn btn_objet">Objets</button>

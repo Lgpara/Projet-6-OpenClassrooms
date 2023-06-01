@@ -247,7 +247,7 @@ a {
 	display: flex;
 	align-items: baseline;
 }
-.edition_bar .edition_mode i, p{
+.edition_bar .edition_mode i, .edition_mode p{
 	color: white;
 	font-size: 16px;
 	margin-right: 9px;
@@ -359,6 +359,9 @@ a {
 	font-size: 9px;
 } 
 
+.addphoto_block .photo_drop {
+	text-align: center;
+}
 
 .addphoto_block .photo_drop{
 	width: 420px;
@@ -397,8 +400,9 @@ a {
 	display: flex;
 	flex-direction: column;
 	text-align: start;
+	box-sizing: border-box;
 }
-.addphoto_block .photo_form .fm1 {
+.addphoto_block .photo_form .entry2 {
 	margin-bottom: 21px;
 }
 
@@ -441,4 +445,68 @@ a {
 	position: relative;
 	top: -58px;
 	left: -276px;
+}
+
+
+
+#photo_input {
+	display: block;
+	position: absolute;
+	width: 420px;
+	height: 170px;
+	opacity: 0;
+}
+
+
+
+
+.uploadedImg {
+	height: 170px;
+	width: 130px;
+	margin-bottom: -2px;
+	object-fit: cover;
+}
+
+.edit_btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: fit-content;
+}
+.edit_btn p {
+	font-family: 'Work Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+}
+.edit_btn i {
+	margin-right: 8px;
+}
+
+figure .edit_btn_photo {
+	height: 0;
+	width: 0;
+	position: relative;
+	top: 20px;
+	left: 94px;
+}
+figure .edit_btn_photo p {
+	margin: 0!important;
+}
+
+.projet_title_container {
+	display: flex;
+	justify-content: center;
+}
+.projet_title_container .edit_btn {
+	position: relative;
+	width: 0px;
+	height: 0px;
+	top: 19px;
+	left: 70px;
+}
+
+.addmargin {
+	margin-bottom: 62px!important;
 }
