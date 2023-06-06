@@ -71,7 +71,7 @@ let modaleWindow = document.querySelector(".module")
 
 // Open 
 const editionClick = document.querySelector(".edition_mode")
-editionClick.addEventListener("click", function(){
+btnForProjet.addEventListener("click", function(){
     modaleWindow.classList.remove("no_display") 
 })
 // Close
